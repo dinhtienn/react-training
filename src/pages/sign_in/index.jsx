@@ -4,6 +4,7 @@ import {withStyles} from '@material-ui/core/styles';
 import {Link} from "react-router-dom";
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Copyright from '../copyright/index';
+import '../../assets/css/style.css';
 // import Link from '@material-ui/core/Link';
 
 const useStyles = theme => ({
@@ -43,7 +44,9 @@ class SignIn extends React.Component {
     return (
       <Container fullWidth className={classes.biggestContainer}>
         <div className={classes.header}>
-          Management
+          <Link to="/" variant="body2" className="logo">
+            Management
+          </Link>
         </div>
         <Container component="main" maxWidth="xs">
           <CssBaseline />

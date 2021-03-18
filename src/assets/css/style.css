@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+a.logo {
+  text-decoration: none;
+  color: #3f51b5;
+}
+
+.no-box-shadow {
+  box-shadow: none;
+}
+
+.header {
+  background-color: #f1f1f1;
+}
