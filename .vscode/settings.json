@@ -1,0 +1,65 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.jsx": "javascriptreact",
+    "*.xml": "xml"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  "prettier.printWidth": 240,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Oceanic Next",
+  "xml.format.splitAttributes": true,
+  "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
+  "xmlTools.removeCommentsOnMinify": true,
+  "xmlTools.splitAttributesOnFormat": true,
+  "cSpell.words": [
+    "authen",
+    "browserslist",
+    "flowtype",
+    "furigana",
+    "geofence",
+    "geojson",
+    "informations",
+    "languagedetector",
+    "persistor",
+    "sonarqube"
+  ]
+}
