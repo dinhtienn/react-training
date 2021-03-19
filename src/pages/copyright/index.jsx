@@ -1,7 +1,7 @@
 import React from 'react';
 import {Typography} from '@material-ui/core';
 
-class Copyright extends React.Component {
+class Index extends React.Component {
   render() {
     return (
       <Typography variant="body2" color="textSecondary" align="center">
@@ -13,4 +13,4 @@ class Copyright extends React.Component {
   }
 }
 
-export default Copyright;
+export default Index;

@@ -37,7 +37,7 @@ const useStyles = theme => ({
   },
 });
 
-class SignIn extends React.Component {
+class Index extends React.Component {
   render() {
     const {classes} = this.props;
 
@@ -109,4 +109,4 @@ class SignIn extends React.Component {
   }
 }
 
-export default withStyles(useStyles)(SignIn)
+export default withStyles(useStyles)(Index)

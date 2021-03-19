@@ -3,25 +3,21 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
-import Home from './pages/home/index';
 import SignIn from './pages/sign_in/index';
 import SignUp from './pages/sign_up/index';
+import Layout from './layouts/index';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router className="App">
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/sign-in">
-          <SignIn />
-        </Route>
-        <Route path="/sign-up">
-          <SignUp />
-        </Route>
+        <Route path="/main" render={(props) => <Layout {...props} />} />
+        <Route path="/sign-in" component={SignIn} />
+        <Route path="/sign-up" component={SignUp} />
+        <Redirect from="/" to={'/main/home'} />
       </Switch>
     </Router>
   </React.StrictMode>,
