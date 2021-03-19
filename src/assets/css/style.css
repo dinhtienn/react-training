@@ -2,8 +2,11 @@ body {
   margin: 0;
 }
 
-a.logo {
+a {
   text-decoration: none;
+}
+
+a.logo {
   color: #3f51b5;
 }
 
@@ -13,4 +16,14 @@ a.logo {
 
 .header {
   background-color: #f1f1f1;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.home-styles {
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
 }

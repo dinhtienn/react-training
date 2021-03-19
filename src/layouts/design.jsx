@@ -114,16 +114,16 @@ export default function Design() {
           <IconButton 
             edge="start" 
             className={classes.menuButton} 
-            color="inherit" 
+            color="primary"
             aria-label="menu"
             onClick={toggleDrawer('left', true)}
           >
-            <Link to="/" variant="body2" className="logo">
-              Management
-            </Link>
+            Management
           </IconButton>
           <div className={classes.root} />
-          <Button color="primary">Home</Button>
+          <Link to='/main/home'>
+            <Button color="primary">Home</Button>
+          </Link>
           <Button color="primary">About</Button>
           <div>
             <IconButton
@@ -139,18 +139,22 @@ export default function Design() {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
-              <StyledMenuItem>
-                <ListItemIcon>
-                  <AccountCircle fontSize="small" />
-                </ListItemIcon>
-                <ListItemText primary="Profile" />
-              </StyledMenuItem>
-              <StyledMenuItem>
-                <ListItemIcon>
-                  <ArrowBack fontSize="small" />
-                </ListItemIcon>
-                <ListItemText primary="Logout" />
-              </StyledMenuItem>
+              <Link className='text-black' to='/main/profile'>
+                <StyledMenuItem>
+                  <ListItemIcon>
+                    <AccountCircle fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText primary="Profile" />
+                </StyledMenuItem>
+              </Link>
+              <Link className='text-black' to='/sign-in'>
+                <StyledMenuItem>
+                  <ListItemIcon>
+                    <ArrowBack fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText primary="Logout" />
+                </StyledMenuItem> 
+              </Link>
             </StyledMenu>
           </div>
         </Toolbar>
