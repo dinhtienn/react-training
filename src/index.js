@@ -9,9 +9,13 @@ import {
 import SignIn from './pages/sign_in/index';
 import SignUp from './pages/sign_up/index';
 import Layout from './layouts/index';
+import { Provider } from 'react-redux';
+import store, {persistor} from './services/configureStore';
+import {PersistGate} from 'redux-persist/lib/integration/react';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
+    <PersistGate loading={<div />} persistor={persistor}>
     <Router className="App">
       <Switch>
         <Route path="/main" render={(props) => <Layout {...props} />} />
@@ -20,6 +24,7 @@ ReactDOM.render(
         <Redirect from="/" to={'/main/home'} />
       </Switch>
     </Router>
-  </React.StrictMode>,
+    </PersistGate>
+  </Provider>,
   document.getElementById('root')
 );
